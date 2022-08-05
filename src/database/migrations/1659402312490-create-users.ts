@@ -18,7 +18,7 @@ export class createUsers1659402312490 implements MigrationInterface {
                         isNullable: false
                     },
                     {
-                        name: 'key-acess',
+                        name: 'keyAccess',
                         type: 'varchar',
                         isNullable: false
                     }

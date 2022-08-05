@@ -9,7 +9,8 @@ const AppDataSource = new DataSource({
     extra: {
         trustServerCertificate: true
     },
-    migrations: ['src/database/migrations/*{.ts,.js}'],   
+    migrations: ['src/database/migrations/*{.ts,.js}'],
+    entities: ['src/app/entities/*{.ts,.js}']   
 });
 
 AppDataSource.initialize()
