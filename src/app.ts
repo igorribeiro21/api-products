@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import 'reflect-metadata';
 import './database';
+import './database/seeders';
 
 const app = express();
 

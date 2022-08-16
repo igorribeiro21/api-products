@@ -1,4 +1,5 @@
 import { DataSource } from 'typeorm';
+import functions from './seeders';
 
 const AppDataSource = new DataSource({
     type: 'mssql',
@@ -14,7 +15,10 @@ const AppDataSource = new DataSource({
 });
 
 AppDataSource.initialize()
-    .then(() => console.log('Conexão com o banco de dados inicializada com sucesso!!'))
+    .then(() => { 
+        console.log('Conexão com o banco de dados inicializada com sucesso!!');
+        functions.map(async (value) => await value());
+    })
     .catch(err => console.log('Ocorreu um erro ao estabelecer a coneção', err));
 
 export default AppDataSource;
