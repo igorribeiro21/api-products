@@ -4,7 +4,7 @@ import { Column, CreateDateColumn, Entity, Generated, PrimaryColumn, UpdateDateC
 class User {
     @PrimaryColumn()
     @Generated()
-    id: string;
+    id?: string;
 
     @Column()
     user:string;

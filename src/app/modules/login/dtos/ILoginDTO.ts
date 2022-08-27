@@ -1,7 +1,7 @@
-interface ISessionDTO {
+interface ILoginDTO {
     status: boolean;
     token?: string;
     message: string;
 };
 
-export default ISessionDTO;
+export default ILoginDTO;
